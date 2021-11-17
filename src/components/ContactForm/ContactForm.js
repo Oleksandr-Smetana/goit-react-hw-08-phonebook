@@ -52,7 +52,7 @@ export default function ContactForm() {
       toast.warn(`${name} is already exist!`);
       return;
     } else {
-      dispatch(addContact(name, number));
+      dispatch(addContact({ name, number }));
       toast.success(
         `${name} successfully added to Phonebook!`,
       );
