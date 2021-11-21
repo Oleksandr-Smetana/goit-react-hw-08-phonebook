@@ -115,18 +115,3 @@ export default function ContactForm() {
     </form>
   );
 }
-
-// ========== до использования useSelector и useDispatch ==========
-// const mapDispatchToProps = dispatch => ({
-//   onSubmit: (name, number) =>
-//     dispatch(addContact(name, number)),
-// });
-
-// export default connect(
-//   null,
-//   mapDispatchToProps,
-// )(ContactForm);
-
-// ContactForm.propTypes = {
-//   onSubmit: PropTypes.func.isRequired,
-// };

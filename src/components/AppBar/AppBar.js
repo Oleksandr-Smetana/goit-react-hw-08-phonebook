@@ -2,8 +2,8 @@ import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { getStatus } from '../../redux/auth/auth-selectors';
 import s from './AppBar.module.css';
-// import AuthNav from '../AuthNav/AuthNav';
-// import UserMenu from '../UserMenu/UserMenu';
+import AuthMenu from '../AuthMenu';
+import UserMenu from '../UserMenu';
 
 export default function AppBar() {
   const isLoggedIn = useSelector(getStatus);
@@ -21,15 +21,7 @@ export default function AppBar() {
           </NavLink>
         )}
 
-        <NavLink to="/register" className={s.link}>
-          Register
-        </NavLink>
-
-        <NavLink to="/login" className={s.link}>
-          Login
-        </NavLink>
-
-        {/* {isLoggedIn ? <UserMenu /> : <AuthMenu />} */}
+        {isLoggedIn ? <UserMenu /> : <AuthMenu />}
       </nav>
     </div>
   );

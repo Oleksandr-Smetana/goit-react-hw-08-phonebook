@@ -39,23 +39,3 @@ export default function Filter() {
     </div>
   );
 }
-
-// ========== до использования useSelector и useDispatch ==========
-// const mapStateToProps = state => ({
-//   value: state.contacts.filter,
-// });
-
-// const mapDispatchToProps = dispatch => ({
-//   onChange: evt =>
-//     dispatch(changeFilter(evt.currentTarget.value)),
-// });
-
-// export default connect(
-//   mapStateToProps,
-//   mapDispatchToProps,
-// )(Filter);
-
-// Filter.propTypes = {
-//   value: PropTypes.string.isRequired,
-//   onChange: PropTypes.func.isRequired,
-// };
