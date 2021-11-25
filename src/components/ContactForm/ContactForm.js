@@ -1,10 +1,5 @@
-// import PropTypes from 'prop-types';
 import { useState } from 'react';
-import {
-  // connect,
-  useSelector,
-  useDispatch,
-} from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

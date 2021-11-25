@@ -1,9 +1,4 @@
-// import PropTypes from 'prop-types';
-import {
-  // connect,
-  useSelector,
-  useDispatch,
-} from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import Loader from '../Loader';
 

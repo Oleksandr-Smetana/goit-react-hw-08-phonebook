@@ -32,7 +32,8 @@
   border-radius: 6px;
 
   font-size: 14px;
-  transition: text-shadow 250ms, color 250ms, background-color 250ms;
+  transition: text-shadow 250ms, color 250ms,
+    background-color 250ms;
 }
 
 .deleteButton:hover,

@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
       <Loader
         type="Rings"
-        color="#3f51b5"
+        color="#ff6400"
         height={80}
         width={80}
         style={{

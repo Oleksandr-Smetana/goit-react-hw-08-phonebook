@@ -1,5 +1,5 @@
-.app {
-  margin: 20px auto;
+.phonebook {
+  margin: 10px auto;
   width: 320px;
   background-color: rgb(255, 255, 225);
   border: 1px solid rgb(190, 190, 190);
@@ -8,7 +8,7 @@
 }
 
 .title {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   color: rgb(40, 40, 0);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);

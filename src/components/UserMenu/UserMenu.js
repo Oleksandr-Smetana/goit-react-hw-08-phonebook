@@ -1,9 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-// import Loader from 'react-loading';
 import {
   getUserName,
   getUserEmail,
-  //   getAuthLoading,
 } from '../../redux/auth/auth-selectors';
 import { logOut } from '../../redux/auth/auth-operations';
 
@@ -16,17 +14,20 @@ export default function UserMenu() {
   const email = useSelector(getUserEmail);
 
   const onLogOut = () => dispatch(logOut());
-  //   const isLogOut = useSelector(getAuthLoading);
 
   return (
-    <>
-      {/* {isLogOut && <Loader />} */}
-      <p>{`Welcome, ${name}!`}</p>
-      <p>{`My e-mail: ${email}.`}</p>
+    <div className={s.userMenu}>
+      <p
+        className={s.text}
+      >{`Welcome, ${name}! (${email})`}</p>
 
-      <button type="button" onClick={onLogOut}>
+      <button
+        type="button"
+        className={s.button}
+        onClick={onLogOut}
+      >
         Logout
       </button>
-    </>
+    </div>
   );
 }

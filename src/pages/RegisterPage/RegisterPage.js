@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/auth/auth-operations';
 
+import s from './RegisterPage.module.css';
+
 export default function RegisterPage() {
   const dispatch = useDispatch();
   const [name, setName] = useState('');
@@ -30,47 +32,50 @@ export default function RegisterPage() {
   };
 
   return (
-    <div>
-      <h1>Registration Form</h1>
+    <div className={s.registerPage}>
+      <h1 className={s.title}>Registration Form</h1>
 
-      <form onSubmit={handleSubmit} autoComplete="off">
-        <label>
+      <form
+        className={s.form}
+        onSubmit={handleSubmit}
+        autoComplete="off"
+      >
+        <label className={s.label}>
           Name
-          <br />
           <input
+            className={s.input}
             type="text"
             name="name"
             value={name}
             onChange={handleChange}
           />
         </label>
-        <br />
 
-        <label>
+        <label className={s.label}>
           E-mail
-          <br />
           <input
+            className={s.input}
             type="email"
             name="email"
             value={email}
             onChange={handleChange}
           />
         </label>
-        <br />
 
-        <label>
+        <label className={s.label}>
           Password
-          <br />
           <input
+            className={s.input}
             type="password"
             name="password"
             value={password}
             onChange={handleChange}
           />
         </label>
-        <br />
 
-        <button type="submit">Register Now</button>
+        <button className={s.submitButton} type="submit">
+          Register Now
+        </button>
       </form>
     </div>
   );

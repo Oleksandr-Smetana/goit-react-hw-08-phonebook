@@ -1,3 +1,7 @@
+import s from './HomePage.module.css';
+
 export default function HomePage() {
-  return <h1>Home Page!</h1>;
+  return (
+    <h2 className={s.homePage}>Nice to see you here!</h2>
+  );
 }
